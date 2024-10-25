@@ -1,0 +1,142 @@
+html {
+    font-size: 1rem;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body a,
+body div,
+body p {
+    color: #000;
+}
+
+body a:hover {
+    color: #555;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 100;
+    color: black !important;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+}
+
+.header .logo {
+    height: 3.5rem;
+    width: 3.5rem;
+}
+
+.header .title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+}
+
+.header .font-increase-button,
+.nav .font-increase-button {
+    font-size: 0.8rem;
+}
+
+.header .font-decrease-button,
+.nav .font-decrease-button {
+    font-size: 0.6rem;
+}
+
+.footer,
+.header,
+.nav {
+    flex: 0 0 auto;
+}
+
+.main {
+    flex: 1 0 auto;
+}
+
+.news .media {
+    border-bottom: 1px solid #9e9e9e;
+}
+
+.news .media img {
+    width: 5rem;
+}
+
+.researches li,
+.studies li {
+    margin-top: 1.2rem;
+}
+
+#title-placeholder,
+#text-placeholder {
+    color: #000000 !important;
+}
+
+caption {
+    color: black;
+}
+
+#description {
+    color: black;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.dropdown-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.dropdown-list li {
+    position: relative;
+}
+
+.dropdown-list li::before {
+    content: "•";
+    position: absolute;
+    left: -10px;
+}
+
+.dropdown-list li ul {
+    margin-top: 5px;
+    padding-left: 20px;
+}
+
+.dropdown-list li ul li::before {
+    content: "-";
+    position: absolute;
+    left: -20px;
+}
+
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: sticky;
+    top: 100vh;
+}
+
+.screenreader-text {
+    position: absolute;
+    left: -999px;
+    width:1px;
+    height: 1px;
+    top: auto;
+  
+    &:focus {
+      color: $background-color;
+      display: inline-block;
+      height: auto;
+      width: auto;
+      position: static;
+      margin: auto;
+    }
+  }

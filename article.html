@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en" id="root">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lorem Ipsum Institute of Technolgoy</title>
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <link href="./css/common.css" rel="stylesheet">
+    <link href="./css/article.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <header class="container-fluid d-none d-lg-block my-4">
+        <div class="container">
+            <div class="row no-gutters">
+                <div class="col-8 media">
+                    <a href="index.html">
+                        <img class="align-self-center mr-3 rounded-right logo" src="./img/logo.jpg" alt="Company Logo"
+                            height="80" aria-label="Company Logo">
+                    </a>
+                    <div class="media-body align-self-center">
+                        <h1 class="mb-0 title" aria-label="Website Title">Lorem Ipsum</h1>
+                        <p aria-label="Institution Name">Institute of Technology</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="btn-toolbar justify-content-end">
+                        <div class="btn-group btn-group-sm">
+                            <label class="sr-only" for="font-increase-button">Increase Font Size</label>
+                            <button class="btn btn-dark font-increase-button" id="font-increase-button"
+                                onclick="changeFontSize(2)" aria-label="Increase Font Size">A+</button>
+                            <label class="sr-only" for="font-decrease-button">Decrease Font Size</label>
+                            <button class="btn btn-dark font-decrease-button" id="font-decrease-button"
+                                onclick="changeFontSize(-2)" aria-label="Decrease Font Size">A-</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <!-- The anchor points to the id of the element -->
+        <a class='sr-only' href="#main">Skip to main content</a>
+        <a class='sr-only' href="#footer">Skip to footer</a>
+    </div>
+    <nav class="container-fluid bg-dark nav" role="navigation">
+        <div class="container">
+            <div class="navbar navbar-dark bg-dark navbar-expand-lg px-0">
+                <button class="navbar-toggler" type="button" tabindex="0" aria-expanded="false"
+                    aria-controls="nav-bar-content" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" aria-hidden="true"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="nav-bar-content">
+                    <div class="navbar-nav mr-auto">
+                        <div class="nav-item">
+                            <a class="nav-link" href="index.html">Homepage</a>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-faculties" aria-haspopup="true"
+                                aria-expanded="false">Faculties</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Applied+sciences">Applied
+                                            sciences</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./empty.html?title=Architecture+%26+planning">Architecture &amp;
+                                            planning</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./empty.html?title=Construction+%26+environment">Construction &amp;
+                                            environment</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Engineering">Engineering</a>
+                                    </li>
+                                    <li><a class="dropdown-item"
+                                            href="./empty.html?title=Health+%26+social+sciences">Health &amp; social
+                                            sciences</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-education" aria-haspopup="true"
+                                aria-expanded="false">Education &amp;
+                                research</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Bachelor">Bachelor</a></li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Master">Master</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./empty.html?title=Continuing+education">Continuing education</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Doctorate">Doctorate</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="nav-bar-industry" aria-haspopup="true"
+                                aria-expanded="false">Industry &amp;
+                                partners</a>
+                            <div class="dropdown-menu">
+                                <ul>
+                                    <li><a class="dropdown-item" href="./empty.html?title=Public+relations">Public
+                                            relations</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./empty.html?title=Commercialization">Commercialization</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="./empty.html?title=Sponsors+%26+partners">Sponsors &amp; partners</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="navbar-nav">
+                        <div class="nav-item">
+                            <a class="nav-link" href="./login.html">Login</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="container mt-4 main content" id="main">
+        <div class="p-5 bg-white">
+            <div class="text-primary text-center mb-4 title">
+                Global temperature record shows 2016 as the warmest year on record
+            </div>
+            <div class="text-center wrapper">
+                <img src="./img/temperature.jpg" alt="Line chart of global average annual temperature"
+                    aria-describedby="description" class="figure-img img-fluid" />
+                <p id="description" class="figure-caption text-center px-5">
+                    The graphic shows the global mean surface temperature change since 1880 till nowadays. The grey
+                    curve indicates the annual average temperature and the black curve shows the smoothed result. Over
+                    the last two centuries, the mean temperature has increased by around 1 degree Celsius.
+                </p>
+            </div>
+            <p>
+                The global temperature record shows the fluctuations of the temperature of the atmosphere and the oceans
+                through various spans of time. The recently published data by NASA is one of the most detailed
+                information that exists since 1850 when methodical thermometer-based records began.
+            </p>
+            <p>
+                Sixteen of the 17 warmest years in the 136-year record have all occurred since 2001, with the exception
+                of 1998. The year 2016 ranks as the warmest on record.
+            </p>
+            <div class="table-responsive mt-4 wrapper">
+                <table class="table text-center">
+                    <caption>
+                        Temperatures from the 19th to the 20th century
+                    </caption>
+                    <col />
+                    <col />
+                    <colgroup span="2"></colgroup>
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col" class="align-middle" rowspan="2">Century</th>
+                            <th scope="col" class="align-middle" rowspan="2">Year</th>
+                            <th scope="colgroup" class="align-middle" colspan="2">
+                                Temperature
+                            </th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="align-middle">Average</th>
+                            <th scope="col" class="align-middle">Smoothed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" class="align-middle" rowspan="2">
+                                19th century
+                            </th>
+                            <th scope="row">1880</th>
+                            <td>-0.20</td>
+                            <td>-0.13</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1890</th>
+                            <td>-0.37</td>
+                            <td>-0.26</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" class="align-middle" rowspan="2">
+                                20th century
+                            </th>
+                            <th scope="row">1920</th>
+                            <td>-0.27</td>
+                            <td>-0.26</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">1990</th>
+                            <td>0.44</td>
+                            <td>0.34</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" class="align-middle" rowspan="2">
+                                21st century
+                            </th>
+                            <th scope="row">2000</th>
+                            <td>0.42</td>
+                            <td>0.52</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2016</th>
+                            <td>0.99</td>
+                            <td>0.91</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="container-fluid bg-dark mt-4 footer">
+        <div class="container text-center py-3">
+            <div class="row justify-content-around">
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=About" aria-label="About">About</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Contact+us"
+                    aria-label="Contact us">Contact us</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Help" aria-label="Help">Help</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Terms+of+services"
+                    aria-label="Terms of service">Terms of service</a>
+                <a class="col-12 col-md mr-3 text-white" href="./empty.html?title=Privacy+policy"
+                    aria-label="Privacy policy">Privacy policy</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/popper.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.js"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
+    <script type="text/javascript" src="./js/article.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+
+</html>
